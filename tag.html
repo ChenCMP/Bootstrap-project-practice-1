@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=enge"/>
+		<!--viewport:窗口屏幕；initial-scale=1：缩放比1:1；user-scalable：用户是否可以手动缩放-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+	<!--导航-->	
+<nav class="nav navbar-default ">
+	<div class="container">
+		<div class="navbar-header">
+			<!--小屏幕按钮-->
+			<button class="navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			<a href="index.html" class="navbar-brand">Maizi Admin</a>
+		</div>
+		<!--菜单-->
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">	
+				<li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
+				<li><a href="user-list.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
+				<li><a href="content.html"><span class="glyphicon glyphicon-list-alt"></span>内容管理</a></li>
+				<li  class="active"><a href="tag.html"><span class="glyphicon glyphicon-tags"></span>标签管理</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">	
+				<li class="dropdown"><!--二级菜单-->
+					<a id="dropdownMenu2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          andmin
+                         <span class="caret"></span>
+                    </a>
+				     <!--aria-labelledby="dropdownMenu2":对应上面的id-->
+                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2"><!--二级菜单内容-->
+						 <li><a href="#"><span class="glyphicon glyphicon-screenshot"></span>前台首页</a></li>
+						 <li><a href="#"><span class="glyphicon glyphicon-user"></span>个人主页</a></li>
+						 <li><a href="#"><span class="glyphicon glyphicon-cog"></span>个人设置</a></li>
+						 <li><a href="#"><span class="glyphicon glyphicon-off"></span>账户中心</a></li>
+						 <li><a href="#"><span class="glyphicon glyphicon-heart"></span>我的收藏</a></li>
+					 </ul>
+				</li>
+				<li><a href="#"><span class="glyphicon glyphicon-off"></span>退出</a></li>
+			</ul>
+		</div>
+	</div>	
+</nav><!--导航结束-->	
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="page-header">
+                 <h1>TAG标签管理</h1>
+			</div>
+		</div>
+		<div class="col-md-12 pd">
+		  <form>
+			<div class="col-md-10">
+				<input class="form-control" placeholder="请输入要添加的标签"/>
+			</div>	
+			<div class="col-md-2">
+				<button type="submit" class="btn btn-default">添加</button>
+			</div>
+		  </form>
+		</div>
+		<div class="col-md-12 taglist">
+			<div class="alert alert-info alert-dismissible pull-left" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>bootstrap</strong>
+            </div>
+	         <div class="alert alert-info alert-dismissible pull-left" role="alert">
+				 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		         <strong>麦子学院</strong>
+			</div>
+			<div class="alert alert-info alert-dismissible pull-left" role="alert">
+		       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			   <strong>前端课程</strong>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center">
+                    Copyright&nbsp;©&nbsp;2012-2015&nbsp;&nbsp;www.maiziedu.com&nbsp;&nbsp;蜀ICP备13014270号-4
+                </p>
+            </div>
+        </div>
+    </div>
+</footer><!--footer-->
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
+

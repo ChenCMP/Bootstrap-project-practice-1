@@ -1,0 +1,42 @@
+.col-md-12{
+	margin-top: 20px;
+}
+/*头像*/
+img.media-object {
+    width: 64px;
+    height: 64px;
+}
+button.btn.btn-default {
+    margin-top: 20px;
+}
+h1 {
+    font-size: 16px;
+    margin: 0;
+}
+.nav-tabs a{
+	color: #000000;
+}
+button.btn.btn-default {
+    margin-top: 0px;
+}
+table.table {
+    border: 1px solid #ddd;
+    border-top: none;
+}
+.user-seach {
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 10px;
+}
+.con{
+	margin-top: 15px;
+}
+.taglist .alert{
+    margin: 0 15px 15px 0;	
+}
+.pd{
+	padding: 0px;
+}
+.col-md-12 {
+    margin-top: 10px;
+}

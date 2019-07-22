@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=enge"/>
+		<!--viewport:窗口屏幕；initial-scale=1：缩放比1:1；user-scalable：用户是否可以手动缩放-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+	<!--导航-->	
+<nav class="nav navbar-default ">
+	<div class="container">
+		<div class="navbar-header">
+			<!--小屏幕按钮-->
+			<button class="navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			<a href="index.html" class="navbar-brand">Maizi Admin</a>
+		</div>
+		<!--菜单-->
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">	
+				<li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
+				<li><a href="user-list.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
+				<li  class="active"><a href="content.html"><span class="glyphicon glyphicon-list-alt"></span>内容管理</a></li>
+				<li><a href="tag.html"><span class="glyphicon glyphicon-tags"></span>标签管理</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">	
+				<li class="dropdown"><!--二级菜单-->
+					<a id="dropdownMenu2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          andmin
+                         <span class="caret"></span>
+                    </a>
+				     <!--aria-labelledby="dropdownMenu2":对应上面的id-->
+                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2"><!--二级菜单内容-->
+						 <li><a href="#"><span class="glyphicon glyphicon-screenshot"></span>前台首页</a></li>
+						 <li><a href="#"><span class="glyphicon glyphicon-user"></span>个人主页</a></li>
+						 <li><a href="#"><span class="glyphicon glyphicon-cog"></span>个人设置</a></li>
+						 <li><a href="#"><span class="glyphicon glyphicon-off"></span>账户中心</a></li>
+						 <li><a href="#"><span class="glyphicon glyphicon-heart"></span>我的收藏</a></li>
+					 </ul>
+				</li>
+				<li><a href="#"><span class="glyphicon glyphicon-off"></span>退出</a></li>
+			</ul>
+		</div>
+	</div>	
+</nav><!--导航结束-->	
+<!--用户管理-->
+<div class="container">
+  <div class="row">
+	 <div class="col-md-12"></div>
+	 <div class="col-md-2">
+		 <div class="list-group">
+			 <a href="content.html" class="list-group-item active">内容管理</a>
+			 <a href="content-add.html" class="list-group-item">添加内容</a>
+		 </div>
+	 </div>
+	 <div class="col-md-10">
+		 <h1>内容管理</h1><hr />
+		 <ul class="nav nav-tabs">
+			 <li class="active"><a href="content.html">内容管理</a></li>
+			 <li><a href="content-add.html">添加内容</a></li>
+		 </ul>
+		 <table class="table">
+		  <thead>
+			 <tr>
+				 <th>文章标题</th>
+				 <th>作者</th>
+				 <th>发布时间</th>
+				 <th>操作</th>
+			 </tr>
+		   </thead>
+		   <tbody>
+			   <tr>
+				<th scope="row">泛Mooc职业教育， 效果和就业为王</th>
+				<td>朱朝</td>
+				<td>2015/08/08</td>
+				<td>
+				  <div role="presentation" class="dropdown">
+				    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" href="#" role="button">
+					操作	<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="content.html">编辑</a></li>
+						<li><a href="content.html">删除</a></li>
+						<li><a href="content.html">全局置顶</a></li>
+					</ul>
+				 </div>
+				</td>
+			   </tr>
+			   <tr>
+			   	 <th scope="row">产品经理常犯的7大错误，你造吗？</th>
+			   	 <td>张张</td>
+			   	 <td>2015/08/01</td>
+			   	 <td>
+			   	   <div role="presentation" class="dropdown">
+			   	     <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" href="#" role="button">
+			   	 	操作	<span class="caret"></span>
+			   	 	</button>
+			   	 	<ul class="dropdown-menu">
+			   	 		<li><a href="content.html">编辑</a></li>
+			   	 		<li><a href="content.html">删除</a></li>
+			   	 		<li><a href="content.html">全局置顶</a></li>
+			   	 	</ul>
+			   	  </div>
+			   	 </td>							
+			   </tr>
+			   <tr>
+			   	 <th scope="row">如何正确使用python日志系统</th>
+			   	 <td>李四</td>
+			     <td>2015/07/08</td>
+	    		 <td>
+	    		   <div role="presentation" class="dropdown">
+	    		     <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" href="#" role="button">
+	    		 	操作	<span class="caret"></span>
+	    		 	</button>
+	    		 	<ul class="dropdown-menu">
+	    		 		<li><a href="content.html">编辑</a></li>
+	    		 		<li><a href="content.html">删除</a></li>
+	    		 		<li><a href="content.html">全局置顶</a></li>
+	    		 	</ul>
+	    		  </div>
+	    		 </td>
+			   </tr>
+			    <tr>
+			   	 <th scope="row">C语言const修饰符的怎么使用？</th>
+			   	 <td>三三</td>
+			     <td>2015/07/05</td>
+			   	    <td>
+			   	 	  <div role="presentation" class="dropdown">
+			   		     <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" href="#" role="button">
+		    		 	操作	<span class="caret"></span>
+			   	    	</button>
+			   	    	<ul class="dropdown-menu">
+			   	    		<li><a href="content.html">编辑</a></li>
+			   	    		<li><a href="content.html">删除</a></li>
+			   	    		<li><a href="content.html">全局置顶</a></li>
+			   	    	</ul>
+			   	      </div>
+			   	    </td>
+			   </tr>
+			   <tr>
+			   	 <th scope="row">Android开发用onCreateOptionsMenu()如何创</th>
+			   	 <td>冼冼</td>
+			     <td>2015/06/06</td>
+			   	    <td>
+			  		   <div role="presentation" class="dropdown">
+			   	    	<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" href="#" role="button">
+			   	    	操作	<span class="caret"></span>
+			   	    	</button>
+			   	    	<ul class="dropdown-menu">
+			   	    		<li><a href="content.html">编辑</a></li>
+			   	    		<li><a href="content.html">删除</a></li>
+			   	    		<li><a href="content.html">全局置顶</a></li>
+			   	    	</ul>
+			   	       </div>
+			   	    </td>
+			   </tr>
+			    <tr>
+			   	 <th scope="row">怎样才能成为优秀的iOS开发工程师</th>
+			   	 <td>小张</td>
+			     <td>2015/06/05</td>
+			   	    <td>
+			   	      <div role="presentation" class="dropdown">
+			   	    	<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" href="#" role="button">
+			   	    	操作	<span class="caret"></span>
+			   	    	</button>
+			   	    	<ul class="dropdown-menu">
+			   	    		<li><a href="content.html">编辑</a></li>
+			   	    		<li><a href="content.html">删除</a></li>
+			   	    		<li><a href="content.html">全局置顶</a></li>
+			   	    	</ul>
+			   	      </div>
+			   	    </td>
+			   </tr>
+			    <tr>
+			   	 <th scope="row">Android今年推出了些什么新技术？</th>
+			   	 <td>小李</td>
+			     <td>2015/05/07</td>
+			   	    <td>
+			   	 	  <div role="presentation" class="dropdown">
+			   		     <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" href="#" role="button">
+			   		    	操作	<span class="caret"></span>
+			   	    	</button>
+			   	    	<ul class="dropdown-menu">
+			   	    		<li><a href="content.html">编辑</a></li>
+			   	    		<li><a href="content.html">删除</a></li>
+			   	    		<li><a href="content.html">全局置顶</a></li>
+			   	    	</ul>
+			   	      </div>
+			   	    </td>
+			   </tr>
+			   
+		   </tbody>
+		 </table>
+		 <nav class="pull-right">
+			 <ul class="pagination">
+				 <li class="disabled">
+					 <a href="user-list.html"><span aria-hidden="true">&laquo;</span></a>
+				 </li>
+				 <li class="active"><a href="user-list.html">1</a></li>
+				 <li><a href="user-list.html">2</a></li>
+				 <li><a href="user-list.html">3</a></li>
+				 <li><a href="user-list.html">4</a></li>
+				 <li><a href="user-list.html">5</a></li>
+				 <li>
+	                 <a href="user-list.html"><span aria-hidden="true">&raquo;</span></a>
+				 </li>
+			 </ul>
+		 </nav>
+	 </div>	
+  </div>
+</div>
+
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center">
+                    Copyright&nbsp;©&nbsp;2012-2015&nbsp;&nbsp;www.maiziedu.com&nbsp;&nbsp;蜀ICP备13014270号-4
+                </p>
+            </div>
+        </div>
+    </div>
+</footer><!--footer-->
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
+
